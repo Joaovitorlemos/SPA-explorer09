@@ -9,6 +9,7 @@ export class Router {
       event = event || window.event
       event.preventDefault()
    
+      // Pegar no histórico do window a url para meu pathname 
       window.history.pushState({}, "", event.target.href)
    
       this.handle()
