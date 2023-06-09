@@ -23,6 +23,9 @@ export class Router {
       const route = this.routes[pathname] || this.routes[404]
    
       // fazendo a function assincrona para fazer minha promisse
+      // 1. fetch() = vai buscar está rota | then() = quando concluir, execute essa função
+      // 2. text() = retorna os dados em forma de texto
+      // O primeiro then() pega os dados e transforma em texto, e no segundo then() pega o texto e transforma em HTML
       fetch(route)
       .then((data) => data.text())
       .then(html => {
