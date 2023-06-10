@@ -1,7 +1,7 @@
 export class Router {
    routes = {}
 
-   // add() serve para adicionar a propriedade(routeName) e o valor(link) do meu objeto modelado para acessar minhas rotas
+   // add() serve para adicionar a propriedade(routeName) e o valor(page) do meu objeto modelado para acessar minhas rotas
    add(routeName, page) {
       this.routes[routeName] = page
    }
