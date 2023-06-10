@@ -1,4 +1,6 @@
 export class Router {
+   
+   // Variável recebendo um objeto vazio para as minhas funções
    routes = {}
 
    // add() serve para adicionar a propriedade(routeName) e o valor(page) do meu objeto modelado para acessar minhas rotas
